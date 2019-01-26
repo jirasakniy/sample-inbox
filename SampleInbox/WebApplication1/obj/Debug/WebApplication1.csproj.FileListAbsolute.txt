@@ -48,6 +48,8 @@ C:\Users\Jirasak\Documents\Git\sample-inbox\SampleInbox\WebApplication1\bin\Syst
 C:\Users\Jirasak\Documents\Git\sample-inbox\SampleInbox\WebApplication1\bin\System.Web.WebPages.xml
 C:\Users\Jirasak\Documents\Git\sample-inbox\SampleInbox\WebApplication1\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Jirasak\Documents\Git\sample-inbox\SampleInbox\WebApplication1\bin\System.Web.WebPages.Razor.xml
-C:\Users\Jirasak\Documents\Git\sample-inbox\SampleInbox\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
 C:\Users\Jirasak\Documents\Git\sample-inbox\SampleInbox\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\Jirasak\Documents\Git\sample-inbox\SampleInbox\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\Jirasak\Documents\Git\sample-inbox\SampleInbox\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
+C:\Users\Jirasak\Documents\Git\sample-inbox\SampleInbox\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\Jirasak\Documents\Git\sample-inbox\SampleInbox\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
