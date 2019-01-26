@@ -15,18 +15,19 @@ export default class EmailBox extends React.Component<IEmailBoxProp,IEmailBoxSta
 
     render():JSX.Element{
         return <div>
-
-            <div className="col-xs-2"></div>
-            <div className="col-xs-10">
-                <span className="col-xs-12">
+            <div className="col-xs-2">
+                Pic
+            </div>
+            <div className="col-xs-10 toey">
+                <div className="col-xs-12">
                     {this.props.mail.from.name}
-                </span>
-                <span className="col-xs-12">
+                </div>
+                <div className="col-xs-12">
                     {this.props.mail.subject}
-                </span>
-                <span className="col-xs-12">
+                </div>
+                <div className="col-xs-12">
                     {this.props.mail.body}
-                </span>
+                </div>
             </div>
         </div>
     }
