@@ -1,0 +1,6 @@
+*/bin/
+*/Debug/
+node_modules/
+bundle.js
+SampleInbox/WebApplication1/obj/Debug/
+SampleInbox/.vs/
