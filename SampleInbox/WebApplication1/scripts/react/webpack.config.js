@@ -1,24 +1,19 @@
-﻿module.exports = {
-    context: __dirname,
-    entry: "./app.js",
-    output: {
-        path: __dirname + "/dist",
-        filename: "bundle.js"
-    },
-    watch:true,
+﻿
+const path = require("path");
+
+module.exports = {
+  entry: "./src/index.tsx",
+  output: {
+    path: path.resolve(__dirname, "build"),
+    filename: "bundle.js"
+  },
     module: {
         rules: [
-            {
-                test: /\.js$/,
-                exclude: /(node_module)/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['babel-preset-env','babel-preset-react']
-                    }
-                }
-            }
+          {
+            test: /\.tsx?$/,
+            loader: "awesome-typescript-loader"
+          }
         ]
-    }
+      },
 
 }

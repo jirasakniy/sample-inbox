@@ -144,7 +144,8 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="scripts\react\app.js" />
-    <Content Include="scripts\react\dist\bundle.js" />
+    <Content Include="scripts\react\src\inbox\models\email.js" />
+    <Content Include="scripts\react\src\inbox\services\emailService.js" />
     <Content Include="scripts\react\webpack.config.js" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
@@ -197,6 +198,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="scripts\react\src\inbox\components\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
