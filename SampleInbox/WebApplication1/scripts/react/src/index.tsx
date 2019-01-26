@@ -1,11 +1,12 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import Inbox from "./inbox/components/inbox";
 
 
 const Root = document.querySelector(".container");
 
 ReactDOM.render(
-    <h1>hello world</h1>,
+    <Inbox></Inbox>,
     document.getElementById('root')
 )
 
