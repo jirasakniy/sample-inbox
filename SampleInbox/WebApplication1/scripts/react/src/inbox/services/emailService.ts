@@ -10,8 +10,7 @@ export default class EmailService {
         // TODO call real to get Email list
         return new Promise((resolve, reject) => {
             setTimeout(function() {
-              var didSucceed = Math.random() >= 0.5;
-              didSucceed ? resolve(result) : reject('Error');
+                resolve(result)
             }, 2000);
           })
       }
@@ -34,9 +33,12 @@ export default class EmailService {
     }
 
     getMockContact() {
+        let randNum = Math.floor(Math.random() * 10) % 5;
+
+        let names =["Izuku Midoriya","Ochako Uraraka","Katsuki Bakugou","Shouto Todoroki","Tsuyu Asui"]
         let result:IContact={
              email:  "testemail1@gmail.com",
-             name: "Midoriya Izuku"
+             name: names[randNum]
         } 
         return result
     }
