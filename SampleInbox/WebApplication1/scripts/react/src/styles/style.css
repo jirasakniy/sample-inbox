@@ -1,3 +1,59 @@
-.toey{
-    color: blue
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+.pointer{
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+.no-padding{
+    padding-left: 0px;
+    padding: 0px;
+}
+.circle-display{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    color:white;
+    text-align: center;
+    font-size: 30px;
+    display: table;
+    margin: 0 auto;
+}
+.email-box{
+    padding-bottom:12px; 
+    border-bottom: solid 1px #CCD1D1;
+}
+.color-red{
+    background-color: #C0392B;
+}
+.color-green{
+    background-color: #16A085;
+}
+.color-blue{
+    background-color: #2980B9;
+}
+.color-yellow{
+    background-color: #F1C40F;
+}
+.color-purple{
+    background-color: #9B59B6;
+}
+.color-orange{
+    background-color: #E67E22;
+}
+.mail-collapse{
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mail-body{
+    color: gray;
+}
+.date-from{
+    padding: 0px;
+    float: right;
+    color: gray;
 }
