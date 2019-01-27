@@ -20,19 +20,45 @@ export default class Inbox extends React.Component<IInboxxProp, IInboxState>{
         super(props);
         {
             this.state = {
-                emails: this.client.getMockEmailList(),
+                emails: [],
                 filter: "None"
             }
+            this.client.getEmailList(10,1).then(emailList => {this.setState({emails:emailList})})
+            .catch(e=>
+                alert(e.message)
+            )
         }
-        this.renderList = this.renderList.bind(this)
+        this.renderList = this.renderList.bind(this);
+        this.getFilterList = this.getFilterList.bind(this);
+        this.read = this.read.bind(this);
     }
     renderList(): JSX.Element {
         return <div className="col-xs-12 nopadding mail-list">
-            {this.state.emails.map((mail) => <EmailBox mail={mail} />)}
+            {this.getFilterList().map((mail,i) => <EmailBox mail={mail} index={i} read={this.read}/>)}
         </div>
+    }
+    getFilterList(): IEmail[] {
+        if(this.state.filter == filterOption[1]){
+            let today = new Date();
+            return this.state.emails.filter(mail=>today.toDateString() == mail.recievedDate.toDateString())
+        }
+        if(this.state.filter == filterOption[2]){
+            return this.state.emails.filter(mail=>!mail.isRead)
+        }
+        if(this.state.filter == filterOption[3]){
+            return this.state.emails.filter(mail=>mail.isRead)
+        }
+        return this.state.emails;        
     }
     loadMore() {
 
+    }
+    
+    read(index: number) 
+    {   
+        let newList = this.state.emails
+        newList[index].isRead = true; 
+        this.setState({emails:newList});
     }
 
 
@@ -42,7 +68,7 @@ export default class Inbox extends React.Component<IInboxxProp, IInboxState>{
                 <div className="col-xs-3 no-padding center">Inbox</div>
                 <div className="col-xs-2 no-padding filter">
                     <div className="col-xs-6 no-padding">Filter</div>
-                    <div className="col-xs-6 no-padding"><Dropdown className="filter-dropdown" options={filterOption} onChange={e => this.setState({ filter: e.value })} value={filterOption[0]} placeholder="None" /></div>               
+                    <div className="col-xs-6 no-padding"><Dropdown className="filter-dropdown" options={filterOption} onChange={(e)=>this.setState({ filter:e.value })} value={filterOption[0]} placeholder="None" /></div>               
                 </div>
             </div>
             {this.renderList()}

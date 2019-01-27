@@ -3,6 +3,7 @@
     subject: string;
     body: string;
     recievedDate: Date;
+    isRead: boolean;
 }
 
 

@@ -4,6 +4,8 @@ import UserDisplay from "./userDisplay";
 
 export interface IEmailBoxProp{
     mail: IEmail;
+    index: number;
+    read: Function;
 }
 
 export interface IEmailBoxState{
@@ -20,6 +22,7 @@ export default class EmailBox extends React.Component<IEmailBoxProp,IEmailBoxSta
     }
 
     mailClick(){
+        if(!this.state.isCollapse)this.props.read(this.props.index);
         this.setState({isCollapse : !this.state.isCollapse})
     }
     
