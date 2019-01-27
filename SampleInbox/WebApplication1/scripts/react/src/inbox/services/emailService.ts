@@ -5,7 +5,7 @@ export default class EmailService {
 
    
     getMockEmailList() {
-        let result:IEmail[]=[this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails()]
+        let result:IEmail[]=[this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails()]
         return result;
     }
 
