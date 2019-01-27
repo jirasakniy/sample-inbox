@@ -18,13 +18,14 @@ export default class Inbox extends React.Component<IInboxxProp,IInboxState>{
         super(props);
         {
             this.state = {
-                emails: [this.client.getMockEmails()]
+                emails: this.client.getMockEmailList()
             }
         }
     }
 
     render():JSX.Element{
         return this.state?<div>
+            {this.state.emails.map((mail) => <EmailBox mail={mail}/>)}
             <EmailBox mail={this.state.emails[0]} />
         </div>:<div/>
     }

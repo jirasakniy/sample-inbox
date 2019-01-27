@@ -4,6 +4,10 @@ import { IContact} from "../models/email";
 export default class EmailService {
 
    
+    getMockEmailList() {
+        let result:IEmail[]=[this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails(),this.getMockEmails()]
+        return result;
+    }
 
     getMockEmails() {
         let result:IEmail={
