@@ -37,7 +37,7 @@ export default class Inbox extends React.Component<IInboxxProp, IInboxState>{
     }
     renderList(): JSX.Element {
         return <div className="col-xs-12 nopadding mail-list" id="mail-list">
-            {this.getFilterList().map((mail, i) => <EmailBox mail={mail} index={i} read={this.read} />)}
+            {this.getFilterList().map((mail, i) => <EmailBox mail={mail} index={i} read={this.read} key={i}/>)}
             <div className="col-xs-10"></div>
 
             <div id="end-of-list" className="col-xs-2 no-padding pointer" onClick={this.loadMore}>Load more..</div>

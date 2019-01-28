@@ -8,7 +8,7 @@ export default class EmailService {
         
         let result = this.getMockEmailList() ;
         // TODO call real to get Email list
-        return new Promise((resolve, reject) => {
+        return new Promise<IEmail[]>((resolve, reject) => {
             setTimeout(function() {
                 resolve(result)
             }, 2000);

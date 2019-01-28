@@ -1,3 +1,8 @@
+.header{
+    text-align: center;
+    background-color: #9B59B6;
+    height:10vp;
+}
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
@@ -12,6 +17,10 @@ body{
     padding-left: 0px;
     padding: 0px;
 }
+.inbox{
+    
+    height:80vh; 
+}
 .circle-display{
     width: 50px;
     height: 50px;
@@ -23,14 +32,11 @@ body{
     margin: 0 auto;
     padding-top:13px;
 }
-.inbox{
-    
-    height:80vh; 
-}
 .inbox-header{
     font-size: 15px;
     font-weight: bold;
-    padding-bottom:12px; 
+    padding-top:15px; 
+    padding-bottom:15px; 
     border-bottom: solid 1px #CCD1D1;
     
 }
@@ -107,4 +113,7 @@ body{
 }
 .filter{
     float: right;
+}
+#end-of-list{
+    padding: 8px;
 }

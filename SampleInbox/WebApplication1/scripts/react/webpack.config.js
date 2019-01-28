@@ -1,6 +1,5 @@
 ﻿
 const path = require("path");
-const ExtractTextWebpackPlugin = require("extract-text-webpack-plugin")
 
 module.exports = {
   entry: "./src/index.tsx",
@@ -8,7 +7,7 @@ module.exports = {
     path: path.resolve(__dirname, "build"),
     filename: "bundle.js"
   },
-  watch : true,
+  watch : false,
   module: {
       rules: [
         {
